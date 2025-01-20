@@ -8,9 +8,9 @@ r.Streaming.LimitPoolSizeToVRAM=True
 r.Streaming.PoolSizeForMeshes=-1
 r.Streaming.HLODStrategy=2
 r.Streaming.FullyLoadUsedTextures=True
-r.Streaming.FramesForFullUpdate=30
-; r.Streaming.AmortizeCPUToGPUCopy=True
-; r.Streaming.MaxNumTexturesToStreamPerFrame=5
+r.Streaming.FramesForFullUpdate=15
+s.LevelStreamingActorsUpdateTimeLimit=1.0
+s.PriorityLevelStreamingActorsUpdateExtraTime=1.0
 s.ForceGCAfterLevelStreamedOut=False
 s.IoDispatcherCacheSizeMB=2048
 ```
