@@ -123,3 +123,6 @@ r.SSR.Temporal=False
 ```
 PakCheck=False
 ```
+
+# 学习参考
+- [WuWa-Configs](https://github.com/AlteriaX/WuWa-Configs)
