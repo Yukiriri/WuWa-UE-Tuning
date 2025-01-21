@@ -2,27 +2,6 @@
 - 当前适配游戏版本：2.0.x
 
 # Engine.ini
-## [/Script/Engine.StreamingSettings]
-```
-r.Streaming.LimitPoolSizeToVRAM=True
-r.Streaming.PoolSizeForMeshes=-1
-r.Streaming.HLODStrategy=2
-r.Streaming.FullyLoadUsedTextures=True
-r.Streaming.FramesForFullUpdate=15
-s.LevelStreamingActorsUpdateTimeLimit=1.0
-s.PriorityLevelStreamingActorsUpdateExtraTime=1.0
-s.ForceGCAfterLevelStreamedOut=False
-s.IoDispatcherCacheSizeMB=2048
-```
-- r.Streaming.HLODStrategy  
-  内存<16G，填0  
-  内存>=16G，填2  
-- s.IoDispatcherCacheSizeMB  
-  内存<8G，填256  
-  内存>=8G，填512  
-  内存>=12G，填1024  
-  内存>=16G，填2048  
-
 ## [/Script/Engine.RendererOverrideSettings]
 ### Framerate | 帧率
 ```
@@ -107,17 +86,37 @@ r.Shadow.PerObjectResolutionMin=2048
 r.Shadow.PerObjectResolutionMax=2048
 r.Shadow.PerObjectShadowMapResolution=2048
 ```
-显存<8G，分辨率全部填512  
-显存>=8G，分辨率全部填1024  
-显存>=12G，分辨率全部填2048  
-显存>=16G，分辨率全部填4096  
-
+- 显存<8G，分辨率全部填512  
+- 显存>=8G，分辨率全部填1024  
+- 显存>=12G，分辨率全部填2048  
+- 显存>=16G，分辨率全部填4096  
 ### Reflection | 反射
 ```
 r.SSR.Quality=4
 r.SSR.HalfResSceneColor=False
 r.SSR.Temporal=False
 ```
+
+## [/Script/Engine.StreamingSettings]
+```
+r.Streaming.LimitPoolSizeToVRAM=True
+r.Streaming.PoolSizeForMeshes=-1
+r.Streaming.HLODStrategy=2
+r.Streaming.FullyLoadUsedTextures=True
+r.Streaming.FramesForFullUpdate=15
+s.LevelStreamingActorsUpdateTimeLimit=1.0
+s.PriorityLevelStreamingActorsUpdateExtraTime=1.0
+s.ForceGCAfterLevelStreamedOut=False
+s.IoDispatcherCacheSizeMB=2048
+```
+- r.Streaming.HLODStrategy  
+  内存<16G，填0  
+  内存>=16G，填2  
+- s.IoDispatcherCacheSizeMB  
+  内存<8G，填256  
+  内存>=8G，填512  
+  内存>=12G，填1024  
+  内存>=16G，填2048  
 
 ## [Pak]
 ```
