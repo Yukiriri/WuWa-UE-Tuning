@@ -39,7 +39,7 @@ r.Kuro.AutoExposure=False
 ; r.AnisotropicMaterials=True
 
 ; LOD | 细节层级
-; r.DetailMode=2
+r.DetailMode=2
 r.LODFadeTime=1.0
 
 ; Distance | 视距
