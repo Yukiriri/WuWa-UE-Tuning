@@ -1,16 +1,13 @@
 # WuWaUETuning
-- 当前适配游戏版本：2.3.x
+- 当前适配游戏版本：2.4.x
 
 # RTX Off | 不开光追
 ```
 [/Script/Engine.RendererOverrideSettings]
+
 ; Performance | 性能
-a.ParallelAnimEvaluation=True
-a.ParallelAnimInterpolation=True
-a.ParallelAnimUpdate=True
-a.ParallelBlendPhysics=True
-rhi.MaximumFrameLatency=0
-rhi.SyncSlackMS=0
+；牺牲一些帧数，换来物体动画稳定
+; r.OneFrameThreadLag=False
 
 ; Tone | 后期色调 （解放UE该有的原色）
 r.KuroTonemapping=1
@@ -65,9 +62,6 @@ r.Streaming.LimitPoolSizeToVRAM=True
 r.Streaming.PoolSizeForMeshes=-1
 r.Streaming.PoolSize.VRAMPercentageClamp=512
 r.Streaming.FramesForFullUpdate=10
-r.Streaming.AmortizeCPUToGPUCopy=True
-r.Streaming.MaxNumTexturesToStreamPerFrame=5
-s.ForceGCAfterLevelStreamedOut=False
 
 [/Script/Engine.GarbageCollectionSettings]
 gc.TimeBetweenPurgingPendingKillObjects=30
