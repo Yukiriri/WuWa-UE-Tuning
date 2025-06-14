@@ -1,7 +1,6 @@
 # WuWaUETuning
 - 当前适配游戏版本：2.4.x
 
-# RTX Off | 不开光追
 ```
 [/Script/Engine.RendererOverrideSettings]
 
@@ -69,5 +68,3 @@ gc.TimeBetweenPurgingPendingKillObjects=30
 [Pak]
 PakCheck=False
 ```
-
-# RTX On | 开光追
