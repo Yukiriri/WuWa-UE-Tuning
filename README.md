@@ -70,12 +70,9 @@ r.SSR.Quality=4
 ; Misc | 杂项性能优化
 wp.Runtime.OverrideMultipleRuntimeGridLoadingRangeValues=150&400&450&600&1500&5000&500&600&1000&500&650&800&1000&1500&120&150&200&350&80&160&200&200&1500&5000&100&160&200&1000&1500
 
-；牺牲一些帧数，换来物体动画稳定
-; r.OneFrameThreadLag=False
-
 [Pak]
 PakCheck=False
 ```
 
 # Credits
-- [Wuwa-Config](https://github.com/AlteriaX/WuWa-Configs)
+- [WuWa-Configs](https://github.com/AlteriaX/WuWa-Configs)
